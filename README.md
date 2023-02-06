@@ -26,7 +26,10 @@ SETUP
 
 OTHER NEEDED ITEMS
 
-- [] include Redux to store the data across views
+- [X] include Redux to store the data across views
+    - [X] install Redux
+    - [X] install react-redux
+    - [X] install redux-logger
 
 ADD NEW FEEDBACK
 
