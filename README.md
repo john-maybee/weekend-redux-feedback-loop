@@ -8,14 +8,14 @@ Your project description goes here. What problem did you solve? How did you solv
 
 ## Notes and Steps
 
-### -Notes
+### Notes
 
 - reflection/feedback form 
     - modeled after Primes's system for reflections
 - as a base requirement, this must include Redux to store the data across views
 - no nav bar
 
-### -Steps
+### Steps
 
 SETUP
 
@@ -34,6 +34,7 @@ OTHER NEEDED ITEMS
 ADD NEW FEEDBACK
 
 - [] create multi-part form that allows users to leave feedback for today
+    - [] include a FeedbackLog that will hold the FeedbackItem(s) that are going to be returned in the same component
 - [] 4 views for the for parts
     - Parts
         - [] How are you feeling today?
