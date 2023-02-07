@@ -2,9 +2,9 @@ const FeedbackItem = ({feedback}) => {
     return (
         <div>
             <div>Feeling: {feedback.feeling}</div>
-            <div>Type of activity: {feedback.understanding}</div>
-            <div>Minutes: {feedback.support}</div>
-            <div>Miles: {feedback.comments}</div>
+            <div>Understanding: {feedback.understanding}</div>
+            <div>Support: {feedback.support}</div>
+            <div>Comments: {feedback.comments}</div>
             {/* <button className="button">Delete</button> */}
         </div>
     );
