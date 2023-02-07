@@ -1,9 +1,13 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import FeedbackItem from './FeedbackItem.jsx';
+// Allows us to navigate to another page
+import { useHistory } from 'react-router-dom'; // history import
 
 function FeedbackLog() {
     let [feedbackList, setFeedbackList] = useState([]);
+
+    const history = useHistory(); // useHistory
 
     // On Load, fetch feedback data from the server
     useEffect(() => {
@@ -22,6 +26,7 @@ function FeedbackLog() {
         });
     };
 
+
     return (
         <div>
             {
@@ -29,7 +34,9 @@ function FeedbackLog() {
                     <FeedbackItem key={item.id} feedback={item} />
                 ))
             }
+            <button onClick={() => history.push('/step/feeling')} className="button">NEXT</button>
         </div>
+        
     );
     
 }

@@ -20,7 +20,7 @@ const Feeling = () => {
             <div>
                 {/* Step 3: getter & setter */}
                 <input value={feeling} onChange={handleChange} className="input" type="number" />
-                <button onClick={() => history.push('/step/two')} className="button">NEXT</button>
+                <button onClick={() => history.push('/step/understanding')} className="button">NEXT</button>
             </div>
         </>
     );

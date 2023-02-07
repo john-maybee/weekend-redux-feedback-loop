@@ -1,13 +1,11 @@
 import { HashRouter as Router, Route, Link } from 'react-router-dom';
-import React from 'react';
-import axios from 'axios';
 import './App.css';
 
 import FeedbackLog from '../FeedbackLog/FeedbackLog.jsx';
 import Feeling from '../Feeling/Feeling.jsx';
+import Understanding from '../Understanding/Understanding.jsx';
 
 function App() {
-
   return (
     <div className='App'>
       <Router>
@@ -16,15 +14,15 @@ function App() {
           <h4>Don't forget it!</h4>
         </header>
         <div>
-          <Route exact path="/step/feedbackLog">
+          <Route exact path="/">
             <FeedbackLog />
           </Route>
-          <Route exact path="/">
+          <Route exact path="/step/feeling">
             <Feeling />
           </Route>
-          {/* <Route exact path="/step/understanding"> */}
-            {/* <Understanding /> */}
-          {/* </Route> */}
+          <Route exact path="/step/understanding">
+            <Understanding />
+          </Route>
           {/* <Route exact path="/step/support"> */}
             {/* <Support /> */}
           {/* </Route> */}

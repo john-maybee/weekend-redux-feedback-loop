@@ -3,16 +3,23 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './components/App/App';
 import registerServiceWorker from './registerServiceWorker';
-import { createStore, combineReducers, applyMiddleware } from 'redux';
+import { combineReducers, applyMiddleware, createStore } from 'redux';
 import { Provider } from 'react-redux';
 import logger from 'redux-logger';
 
-ReactDOM.render(<App />, document.getElementById('root'));
-registerServiceWorker();
+// ReactDOM.render(<App />, document.getElementById('root'));
+// registerServiceWorker(); // these two lines randomly generated and put me behind over an hour
 
 
 const feeling = (state = '', action) => {
     if (action.type === 'SET_FEELING') {
+        return action.payload;
+    } 
+    return state;
+}
+
+const understanding = (state = '', action) => {
+    if (action.type === 'SET_UNDERSTANDING') {
         return action.payload;
     } 
     return state;
@@ -24,6 +31,7 @@ const storeInstance = createStore(
     combineReducers(
         {
             feeling,
+            understanding
         }
     ),
     applyMiddleware(logger)
