@@ -10,7 +10,7 @@ const Comments = () => {
 
     // Step 4: dispatch
     const handleChange = (event) => {
-        event.preventDefault();
+        // event.preventDefault(); This step it says to make it so we can have a blank field. Therefore, the preventDefault has been removed.
         // Pass the data to our reducer
         dispatch({ type: 'SET_COMMENTS', payload: event.target.value });
     }
