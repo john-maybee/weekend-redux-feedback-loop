@@ -5,6 +5,7 @@ import FeedbackLog from '../FeedbackLog/FeedbackLog.jsx';
 import Feeling from '../Feeling/Feeling.jsx';
 import Understanding from '../Understanding/Understanding.jsx';
 import Support from '../Support/Support.jsx';
+import Comments from '../Comments/Comments.jsx';
 
 function App() {
   return (
@@ -27,9 +28,9 @@ function App() {
           <Route exact path="/step/support">
             <Support />
           </Route>
-          {/* <Route exact path="/step/comments"> */}
-            {/* <Comments /> */}
-          {/* </Route> */}
+          <Route exact path="/step/comments">
+            <Comments />
+          </Route>
           {/* <Route exact path="/step/Review"> */}
             {/* <Review /> */}
           {/* </Route> */}

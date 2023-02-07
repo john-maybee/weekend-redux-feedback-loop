@@ -32,6 +32,13 @@ const support = (state = '', action) => {
     return state;
 }
 
+const comments = (state = '', action) => {
+    if (action.type === 'SET_COMMENTS') {
+        return action.payload;
+    } 
+    return state;
+}
+
 // Redux store! Keeps track of all reducers
 const storeInstance = createStore(
     // reducers go here
@@ -39,7 +46,8 @@ const storeInstance = createStore(
         {
             feeling,
             understanding,
-            support
+            support,
+            comments
         }
     ),
     applyMiddleware(logger)
