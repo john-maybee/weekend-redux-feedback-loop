@@ -13,28 +13,32 @@ registerServiceWorker(); // these two lines randomly generated and put me behind
 
 const feeling = (state = '', action) => {
     if (action.type === 'SET_FEELING') {
-        return action.payload;
+        // const {feeling} = action.payload;
+        return state = action.payload;
     } 
     return state;
 }
 
 const understanding = (state = '', action) => {
     if (action.type === 'SET_UNDERSTANDING') {
-        return action.payload;
+        // const {understanding} = action.payload;
+        return state = action.payload;
     } 
     return state;
 }
 
 const support = (state = '', action) => {
     if (action.type === 'SET_SUPPORT') {
-        return action.payload;
+        // const {support} = action.payload;
+        return state = action.payload;
     } 
     return state;
 }
 
 const comments = (state = '', action) => {
     if (action.type === 'SET_COMMENTS') {
-        return action.payload;
+        // const {comments} = action.payload;
+        return state = action.payload;
     } 
     return state;
 }

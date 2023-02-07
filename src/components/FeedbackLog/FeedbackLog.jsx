@@ -34,7 +34,7 @@ function FeedbackLog() {
                     <FeedbackItem key={item.id} feedback={item} />
                     ))
             }
-            <button onClick={() => history.push('/step/feeling')} className="button">NEXT</button>
+            {/* <button onClick={() => history.push('/step/feeling')} className="button">NEXT</button> */}
         </div>
         
     );
