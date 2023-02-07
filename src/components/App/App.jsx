@@ -1,21 +1,23 @@
-// import { HashRouter as Router, Route, Link } from 'react-router-dom';
+import { HashRouter as Router, Route, Link } from 'react-router-dom';
 import React from 'react';
 import axios from 'axios';
 import './App.css';
+
+import FeedbackLog from '../FeedbackLog/FeedbackLog.jsx';
 
 function App() {
 
   return (
     <div className='App'>
-      {/* <Router> */}
+      <Router>
         <header className='App-header'>
           <h1 className='App-title'>Feedback!</h1>
           <h4>Don't forget it!</h4>
         </header>
         <div>
-          {/* <Route exact path="/"> */}
-            {/* <FeedbackLog /> */}
-          {/* </Route> */}
+          <Route exact path="/">
+            <FeedbackLog />
+          </Route>
           {/* <Route exact path="/step/feeling"> */}
             {/* <Feeling /> */}
           {/* </Route> */}
@@ -35,7 +37,7 @@ function App() {
             {/* <ThankYouLanding /> */}
           {/* </Route> */}
         </div>
-      {/* </Router> */}
+      </Router>
     </div>
   );
 }
