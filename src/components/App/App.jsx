@@ -6,6 +6,7 @@ import Feeling from '../Feeling/Feeling.jsx';
 import Understanding from '../Understanding/Understanding.jsx';
 import Support from '../Support/Support.jsx';
 import Comments from '../Comments/Comments.jsx';
+import Review from '../Review/Review.jsx';
 
 function App() {
   return (
@@ -31,9 +32,9 @@ function App() {
           <Route exact path="/step/comments">
             <Comments />
           </Route>
-          {/* <Route exact path="/step/Review"> */}
-            {/* <Review /> */}
-          {/* </Route> */}
+          <Route exact path="/step/Review">
+            <Review />
+          </Route>
           {/* <Route exact path="/step/ThankYouLanding"> */}
             {/* <ThankYouLanding /> */}
           {/* </Route> */}

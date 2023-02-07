@@ -10,6 +10,7 @@ const Support = () => {
 
     // Step 4: dispatch
     const handleChange = (event) => {
+        event.preventDefault();
         // Pass the data to our reducer
         dispatch({ type: 'SET_SUPPORT', payload: event.target.value });
     }

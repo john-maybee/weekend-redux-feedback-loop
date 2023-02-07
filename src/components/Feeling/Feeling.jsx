@@ -10,6 +10,7 @@ const Feeling = () => {
 
     // Step 4: dispatch
     const handleChange = (event) => {
+        event.preventDefault();
         // Pass the data to our reducer
         dispatch({ type: 'SET_FEELING', payload: event.target.value });
     }

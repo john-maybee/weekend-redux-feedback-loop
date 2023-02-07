@@ -10,6 +10,7 @@ const Understanding = () => {
 
     // Step 4: dispatch
     const handleChange = (event) => {
+        event.preventDefault();
         // Pass the data to our reducer
         dispatch({ type: 'SET_UNDERSTANDING', payload: event.target.value });
     }
