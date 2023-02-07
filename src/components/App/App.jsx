@@ -4,6 +4,7 @@ import './App.css';
 import FeedbackLog from '../FeedbackLog/FeedbackLog.jsx';
 import Feeling from '../Feeling/Feeling.jsx';
 import Understanding from '../Understanding/Understanding.jsx';
+import Support from '../Support/Support.jsx';
 
 function App() {
   return (
@@ -14,18 +15,18 @@ function App() {
           <h4>Don't forget it!</h4>
         </header>
         <div>
-          <Route exact path="/">
+          <Route exact path="/feedbackLog">
             <FeedbackLog />
           </Route>
-          <Route exact path="/step/feeling">
+          <Route exact path="/">
             <Feeling />
           </Route>
           <Route exact path="/step/understanding">
             <Understanding />
           </Route>
-          {/* <Route exact path="/step/support"> */}
-            {/* <Support /> */}
-          {/* </Route> */}
+          <Route exact path="/step/support">
+            <Support />
+          </Route>
           {/* <Route exact path="/step/comments"> */}
             {/* <Comments /> */}
           {/* </Route> */}

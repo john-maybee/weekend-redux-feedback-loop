@@ -25,13 +25,21 @@ const understanding = (state = '', action) => {
     return state;
 }
 
+const support = (state = '', action) => {
+    if (action.type === 'SET_SUPPORT') {
+        return action.payload;
+    } 
+    return state;
+}
+
 // Redux store! Keeps track of all reducers
 const storeInstance = createStore(
     // reducers go here
     combineReducers(
         {
             feeling,
-            understanding
+            understanding,
+            support
         }
     ),
     applyMiddleware(logger)
