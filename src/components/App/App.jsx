@@ -4,6 +4,7 @@ import axios from 'axios';
 import './App.css';
 
 import FeedbackLog from '../FeedbackLog/FeedbackLog.jsx';
+import Feeling from '../Feeling/Feeling.jsx';
 
 function App() {
 
@@ -15,12 +16,12 @@ function App() {
           <h4>Don't forget it!</h4>
         </header>
         <div>
-          <Route exact path="/">
+          <Route exact path="/step/feedbackLog">
             <FeedbackLog />
           </Route>
-          {/* <Route exact path="/step/feeling"> */}
-            {/* <Feeling /> */}
-          {/* </Route> */}
+          <Route exact path="/">
+            <Feeling />
+          </Route>
           {/* <Route exact path="/step/understanding"> */}
             {/* <Understanding /> */}
           {/* </Route> */}
