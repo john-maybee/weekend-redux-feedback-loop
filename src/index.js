@@ -1,14 +1,14 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './components/App/App';
+import App from './components/App/App.jsx';
 import registerServiceWorker from './registerServiceWorker';
 import { combineReducers, applyMiddleware, createStore } from 'redux';
 import { Provider } from 'react-redux';
 import logger from 'redux-logger';
 
 // ReactDOM.render(<App />, document.getElementById('root'));
-// registerServiceWorker(); // these two lines randomly generated and put me behind over an hour
+registerServiceWorker(); // these two lines randomly generated and put me behind over an hour
 
 
 const feeling = (state = '', action) => {

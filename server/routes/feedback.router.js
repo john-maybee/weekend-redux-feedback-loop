@@ -28,16 +28,16 @@ router.post('/', (req, res) => {
         });
 });
 
-// router.delete('/:id', (req, res) => {
-//     console.log("In DELETE request");
-//     let queryText = 'DELETE FROM "feedback" WHERE "id" = $1';
+router.delete('/:id', (req, res) => {
+    console.log("In DELETE request");
+    let queryText = 'DELETE FROM "feedback" WHERE "id" = $1';
 
-//     pool.query(queryText, [req.params.id]).then((result) => {
-//         res.send(result.rows);
-//     }).catch((err) => {
-//         console.log(err);
-//         res.sendStatus(500);
-//     })
-// }); // router.delete for if we get to the delete option in the stretch goals
+    pool.query(queryText, [req.params.id]).then((result) => {
+        res.send(result.rows);
+    }).catch((err) => {
+        console.log(err);
+        res.sendStatus(500);
+    })
+}); // router.delete for if we get to the delete option in the stretch goals
 
 module.exports = router;
